@@ -18,7 +18,7 @@ def download_video():
         views_label.config(text=f"Views: {yt.views}")
 
         ys = yt.streams.get_highest_resolution()
-        ys.download("D:\\youtube downloaded videos")
+        ys.download("YOUR_FOLDER_LOCATION")
 
         messagebox.showinfo("Success", "Video downloaded successfully!")
 
@@ -51,4 +51,5 @@ views_label = tk.Label(root, text="Views: ")
 views_label.pack(pady=5)
 
 root.mainloop()
+
 
